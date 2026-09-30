@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ek Kachori Do Samosa Mera Academic Comeback Ka Kya Bharosa</title>
+    
+    <!-- Google Fonts: Calming, clean typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- MathJax Configuration -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            },
+            svg: { fontCache: 'global' },
+            startup: { typeset: true }
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    <!-- Marked.js -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <!-- Sky & Drifting Clouds Background Layer -->
+    <div class="sky-container">
+        <div class="sky-gradient"></div>
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+        <div class="cloud cloud-3"></div>
+        <div class="cloud cloud-4"></div>
+        <div class="cloud cloud-5"></div>
+        <div class="sun-glow"></div>
+    </div>
+
+    <!-- User Floating Images Placed Over The Sky Background (Frameless) -->
+    <div id="nature-stickers-layer">
+        <div class="sky-sticker sticker-1" title="Mountain River">
+            <img src="assets/img1.jpg" alt="Nature Vista">
+        </div>
+        <div class="sky-sticker sticker-2" title="Ethereal Flowers">
+            <img src="assets/img2.jpg" alt="Soft Flowers">
+        </div>
+        <div class="sky-sticker sticker-3" title="Sunset Mountain Lake">
+            <img src="assets/img3.jpg" alt="Mountain Lake Sunset">
+        </div>
+        <div class="sky-sticker sticker-4" title="Retro Ride">
+            <img src="assets/img4.png" alt="Rain Cruiser">
+        </div>
+        <div class="sky-sticker sticker-5" title="Midnight Vibe">
+            <img src="assets/img5.png" alt="Midnight Drift">
+        </div>
+    </div>
+
+    <!-- MAIN APPLICATION WRAPPER -->
+    <div class="app-shell">
+
+        <!-- ==================== HOME VIEW ==================== -->
+        <section id="home-view" class="view active">
+            <header class="hero-block">
+                <div class="nature-pill">🌿 ACADEMIC COMEBACK HUB • OXFORD D2</div>
+                <h1 class="hero-headline">
+                    Ek Kachori Do Samosa<br>
+                    <span class="highlight-title">Mera Academic Comeback Ka Kya Bharosa</span>
+                </h1>
+                <p class="hero-subtext">"Real Madrid is better than Bayern."</p>
+            </header>
+
+            <main class="home-grid">
+                <!-- Subject Selection Card -->
+                <div class="nature-card math-hero-card" id="btn-math">
+                    <div class="card-badge">D2 8TH EDITION</div>
+                    <div class="card-icon-circle">📐</div>
+                    <h2 class="card-title">MATHEMATICS</h2>
+                    <p class="card-description">
+                        Comprehensive Oxford D2 Exam Cram Guide. Includes Linear Functions (Ex 1A), Graphical Simultaneous Equations (Ex 2A & 2B), and Interactive Game-Style MCQs.
+                    </p>
+
+                    <div class="card-tags">
+                        <span class="tag">📖 Cram Notes & Guides</span>
+                        <span class="tag">🎮 20-Question Live Game Quiz</span>
+                        <span class="tag">🏆 All-Time Scoreboard</span>
+                    </div>
+
+                    <button class="nature-button primary-btn">
+                        ENTER MATHEMATICS SECTION →
+                    </button>
+                </div>
+
+                <!-- Scoreboard Widget -->
+                <div class="nature-card scoreboard-widget">
+                    <div class="widget-header">
+                        <div class="icon">🏆</div>
+                        <div>
+                            <h3>All-Time Scoreboard</h3>
+                            <p class="widget-sub">Your recent game quiz attempts</p>
+                        </div>
+                    </div>
+                    <ul id="home-score-list" class="score-items-list">
+                        <!-- Populated via JS -->
+                    </ul>
+                </div>
+            </main>
+        </section>
+
+
+        <!-- ==================== SUBJECT VIEW (MATHEMATICS) ==================== -->
+        <section id="subject-view" class="view">
+            <!-- Header Bar -->
+            <header class="subject-topbar">
+                <button id="btn-back" class="nature-button secondary-btn">
+                    ← Back to Hub
+                </button>
+                <div class="topbar-title">
+                    <span class="mini-tag">D2 8TH EDITION</span>
+                    <h2>MATHEMATICS</h2>
+                </div>
+            </header>
+
+            <!-- Navigation Tabs -->
+            <nav class="nature-tabs-bar">
+                <button class="nav-tab-btn active" data-target="concepts-tab">
+                    <span class="tab-icon">📖</span> Concept & Exam Cram Guide
+                </button>
+                <button class="nav-tab-btn" data-target="mcqs-tab">
+                    <span class="tab-icon">🎮</span> MCQ Game Arena
+                </button>
+            </nav>
+
+            <!-- TAB 1: CONCEPTS & EXAM CRAM GUIDE -->
+            <div class="tab-pane active" id="concepts-tab">
+                <div class="concepts-card nature-card">
+                    <!-- Quick Chapter Jumper -->
+                    <div class="chapter-fast-nav">
+                        <span class="fast-nav-label">QUICK JUMP:</span>
+                        <a href="#ch1" class="fast-nav-link">Chapter 1 (Ex 1A)</a>
+                        <a href="#ch2" class="fast-nav-link">Chapter 2 (Ex 2A & 2B)</a>
+                        <a href="#special-cases" class="fast-nav-link">Special Cases (Ex 2B)</a>
+                    </div>
+
+                    <!-- Rendered Cram Guide Content -->
+                    <article class="cram-guide-body" id="concepts-content">
+                        <!-- Injected via JS -->
+                    </article>
+                </div>
+            </div>
+
+            <!-- TAB 2: MCQS GAME ARENA -->
+            <div class="tab-pane" id="mcqs-tab">
+                
+                <!-- 1. Game Intro Screen -->
+                <div id="game-intro-screen" class="nature-card game-center-card">
+                    <div class="game-badge">🎮 INTERACTIVE GAME MODE</div>
+                    <h2 class="game-title">20-Question MCQ Speed Run</h2>
+                    <p class="game-desc">
+                        Pick your answers one question at a time! The game immediately reveals whether you got it right or wrong, provides the correct answer, and tracks your real-time score.
+                    </p>
+
+                    <div class="game-stats-grid">
+                        <div class="game-stat-box">
+                            <span class="stat-val" id="pool-remaining">70</span>
+                            <span class="stat-lbl">Questions in Current Cycle</span>
+                        </div>
+                        <div class="game-stat-box">
+                            <span class="stat-val">20</span>
+                            <span class="stat-lbl">Questions Per Game</span>
+                        </div>
+                        <div class="game-stat-box">
+                            <span class="stat-val" id="stat-total-games">0</span>
+                            <span class="stat-lbl">Games Finished</span>
+                        </div>
+                    </div>
+
+                    <button id="btn-start-game" class="nature-button start-game-btn">
+                        🚀 START GAME QUIZ NOW
+                    </button>
+
+                    <!-- Scoreboard -->
+                    <div class="game-history-section">
+                        <div class="history-header">
+                            <h3>📊 Your All-Time Scores</h3>
+                            <button id="btn-clear-history" class="small-text-link">Reset Scores</button>
+                        </div>
+                        <ul id="game-score-list" class="score-items-list">
+                            <!-- Populated via JS -->
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 2. Active Game Arena Screen (Question by Question) -->
+                <div id="game-active-screen" class="nature-card game-arena-card" style="display: none;">
+                    
+                    <!-- HUD (Heads-Up Display) -->
+                    <div class="game-hud">
+                        <div class="hud-left">
+                            <span class="hud-tag">QUESTION</span>
+                            <span class="hud-qnum" id="hud-qnum">1 / 20</span>
+                        </div>
+                        
+                        <div class="hud-center">
+                            <div class="hud-progress-track">
+                                <div id="hud-progress-fill" class="hud-progress-bar"></div>
+                            </div>
+                        </div>
+
+                        <div class="hud-right">
+                            <div class="hud-score-badge">
+                                <span class="score-lbl">SCORE</span>
+                                <span class="score-num" id="hud-score-display">0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question Container -->
+                    <div class="game-question-zone">
+                        <div class="game-question-text" id="game-question-text">
+                            <!-- Injected by JS -->
+                        </div>
+
+                        <!-- 4 Options Grid -->
+                        <div class="game-options-grid" id="game-options-container">
+                            <!-- Option buttons injected by JS -->
+                        </div>
+
+                        <!-- Feedback Banner (shown right after answering) -->
+                        <div id="game-feedback-banner" class="feedback-banner" style="display: none;">
+                            <div class="feedback-icon" id="feedback-icon">✓</div>
+                            <div class="feedback-text-wrap">
+                                <h4 id="feedback-title">Correct!</h4>
+                                <p id="feedback-detail">Nicely done!</p>
+                            </div>
+                            <button id="btn-next-question" class="nature-button next-btn">
+                                Next Question →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Game Completed / Victory Screen -->
+                <div id="game-finish-screen" class="nature-card game-finish-card" style="display: none;">
+                    <div class="finish-trophy">🎉</div>
+                    <h2 class="finish-title" id="finish-title">Game Complete!</h2>
+                    <p class="finish-subtitle" id="finish-subtitle">Here is your performance breakdown:</p>
+
+                    <div class="score-circle-container">
+                        <div class="nature-score-circle">
+                            <span class="big-score" id="finish-percentage">0</span><span class="percent">%</span>
+                        </div>
+                        <div class="score-subtext" id="finish-score-counts">0 / 20 Correct</div>
+                    </div>
+
+                    <div class="finish-actions">
+                        <button id="btn-play-again" class="nature-button start-game-btn">
+                            🔄 Play Next 20 Questions
+                        </button>
+                        <button id="btn-back-to-intro" class="nature-button secondary-btn">
+                            Dashboard & Scores
+                        </button>
+                    </div>
+
+                    <!-- Question Breakdown Review List -->
+                    <div class="game-round-review">
+                        <h3>Round Summary</h3>
+                        <div id="round-review-list" class="review-items-container">
+                            <!-- Injected by JS -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
